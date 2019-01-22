@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+   background-color: #f4f4f4;
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.41;
+}
+
+
+	
+
+             /******HEADER ******/
+#header {
+	background-color: #fff;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+#header a{
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	color: #010611;
+}
+
+ #header nav {
+	display: none; 
+	position: fixed;
+}
+ #header.open nav{
+    display: block;
+    background-color: #fff;
+}
+ #header nav a{
+	display: block;
+	transition: all 0.4s;
+}
+
+ #header nav a:hover{
+	background-color: rgba(0,0,0,.1);
+	color: #5e7ce2;
+}
+
+ #header #logo{
+	display: inline-block;
+	width: 70%;
+}
+ 
+#header #logo a{
+	font-size: 1.5em;
+	padding: 20px;
+	padding-left: 20px;
+	color :#5e7ce2;
+	font-weight: bold;
+}
+#header .nav-toggle{
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+}
+
+            /*****INTRO*****/
+#intro{
+     min-height: 600px;
+	 background-image:url("https://secure.i.telegraph.co.uk/multimedia/archive/03125/New_York_Skyline_3125550a.jpg");
+	 background-size: cover;
+	 background-color: rgba(0,0,0,0);
+	 background-attachment: fixed;
+	 background-position: 30% 50%;
+	 position: relative;
+}
+ 		
+.intro-text{
+     position: absolute;
+     top:170px;
+	 left: 0px;
+     text-align: center;
+	 
+}	
+.intro-text h1{
+     font-size: 1.7em;
+	 padding: 10px;
+	 font-weight: bold;
+}
+.intro-text h1 span{
+    color: #5e7ce2;
+	
+}	
+
+.intro-text .call-to-action {
+	width: 60%;
+	margin: 20px auto;
+}
+
+.intro-text .call-to-action .btn-bg{
+	width: 100%;
+}
+
+.call-to-action{
+   margin: 20px 0px
+}
+.btn-bg{
+	text-decoration: none;
+	background-color: #5e7ce2;
+	color: #fff;
+	display: inline-block;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	transition: background-color .4s, color 0.4s;
+	cursor: pointer;
+}
+.btn-bg:hover{
+	background-color: white;
+	color: #5e7ce2;
+}
+ 
+         /*****ABOUT US****/
+#about-us {
+	background-color: white;
+	text-align: center;
+	
+}
+.service{
+	margin: 15px 0px;
+	text-align: center;
+}
+.service-icon{
+	font-size: 3em;
+	text-align: center;
+	padding: 15px;
+	color: #5e7ce2;
+}
+.service-title{
+	padding: 20px 0px;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+.section {
+	padding-bottom: 30px;
+}
+.section-title{
+	padding: 15px;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	text-align: center;
+}
+.section-title span{
+	color: #5e7ce2;
+}
+.section-desc {
+	padding: 15px 0px;
+	padding-top: 5px;
+	font-style: italic;
+	text-align: center;
+}
+		    /****BY NUMBERS****/
+#by-numbers{
+	background-color: #142442;
+	color: white;
+}
+.fact{
+	font-size: 2em;
+	text-align: center;
+	margin: 10px 0px;
+	position: relative;
+}
+.fact-icon{
+	padding: 15px;
+	font-size: 1.5em;
+}
+.fact-text{
+    font-style : italic;
+}	
+
+            /****WORKS*****/
+			
+#works .section-title,
+#works  .section-desc{
+	text-align: center;
+}
+.work {
+	margin: 20px 0px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+.work-img{
+	height: 200px;
+	width: 100%;
+}
+.work-title{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+       /******JOINUS*****/
+#join-us {
+	background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+	background-color: rgba(0,0,0,.5);
+	background-size: cover;
+	background-attachment: fixed;
+ 
+	text-align: center;
+	color: white;
+}
+#join-us h5{
+	margin-top: 20px;
+	padding: 10px 10px;
+	font-size: 1.3em;
+	overflow: hidden;
+}
+#join-us h4 {
+	padding: 10px 0px;
+	font-size: 1.5em;
+}
+	
+
+	    /***SERVICES****/
+#services {
+	background-color: white;
+}
+
+      /****PRICING***/
+	  
+.plan {
+	margin: 10px 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	border-top: 8px solid #5e7ce2;
+	border-radius: 10px;
+}
+.plan-title{
+	font-size: 2em;
+	color: #5e7ce2;
+}
+.plan-price{
+	font-style: italic;
+	padding: 10px 0px;
+	font-size: 1.2em;
+}
+.plan li{
+	padding: 10px 0px;
+}
+	    /****TEAM**/
+		
+#team {
+	background-color: white;
+}
+.member{
+	margin: 15px 0px;
+	text-align: center;
+}
+.member-name{
+	padding: 10px 0px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.member-job{
+	font-style: italic;
+	font-size: 1.2em;
+	padding: 5px 0px;
+}
+.member-words{
+	padding: 5px 0px;
+	padding-bottom: 15px;
+}
+.social-link a{
+	color: #010611;
+	display: inline-block;
+	padding: 12px;
+}
+
+	        /*****CONTACT*****/
+form {
+     background-color: white;
+     padding: 10px;
+     margin-top: 10px;
+	 padding-bottom: 20px;
+}
+form input,
+form textarea {
+      width: 100%;
+	  padding: 10px;
+	  margin-bottom: 10px;
+	  border: 2px solid transparent;
+	  outline: none;
+	  background-color: #f4f4f4;
+	  transition: border 0.4s, background-color 0.4s;
+}
+form input:hover,
+form input:focus,
+form textarea:focus,
+form textarea:hover {
+	    background-color: white;
+		border: 2px solid #f4f4f4;
+}
+form textarea {
+	 min-height: 90px;
+	 margin-bottom: 15px;
+}
+	
+	
+form label{
+   display: block;
+   padding: 5px 0px;
+}
+
+#map {
+	padding-bottom: 0px;
+}
+   
+             /***FOOTER***/
+#footer {
+	background-color: #142442;
+	color: white;
+}
+#footer p{
+	padding: 10px 0px;
+}
+
+.info{
+	margin: 15px 0px;
+}
+
+#footer a{
+	color: white;
+	display: inline-block;
+	padding: 10px 0px;
+}
+#footer .info-title{
+	padding: 15px 0px;
+	font-size: 1.3em;
+}
+#footer .copyright{
+	text-align: center;
+}
+.go-up{
+	padding: 10px;
+	background-color: #142442;
+	border-radius: 5px;
+	position: fixed;
+	box-shadow: 0px 0px 20px rgba(0,0,0, .1);
+	bottom: 20px;
+	right: 20px;
+}
+.go-up a{
+	padding: 10px;
+	display: inline-block;
+	color: white;
+}
+	      
+   
+			/******Common Codes****/
+ ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+.container{
+      max-width: 1100px;
+	  margin: auto;
+	  padding: 10px;
+}	
+img {
+	width: 100%;
+}
+         
+		   /****CSS for TABLETS****/
+@media screen and (min-width:950px){
+        #header .nav-toggle {
+           display: none;
+		}			
+        #header nav{
+			display: block;
+		}
+		#header nav li{
+			display: inline-block;
+		}
+ 
+		.intro-text{
+			top: 220px;
+		}
+		.service,
+        .fact,
+        .work,
+        .plan,
+        .member,
+        .info		{
+			width: 45.5%;
+			display: inline-block;
+			margin: 2%;
+		}
+		#services .service:last-child,
+		.plan:last-child{
+			display: block;
+			margin: auto;
+		}
+		.member-img{
+			height: 250px;
+			overflow: hidden;
+		 
+		}
+}
+
+
+       /****CSS for LAPTOPS*****/
+		
+@media screen and (min-width: 1000px){
+	    #header #logo{
+			width: 30%;
+			display: inline-block;
+		}
+		#header nav {
+			width: 65%;
+			display: inline-block;
+		}
+		#intro {
+			min-height: 600px;
+		}
+		#intro .intro-text{
+			width: 80%;
+			left: 10%;
+		}
+		#intro .call-to-action{
+			max-width: 250px;
+		}
+		.service,
+        .work,
+        .plan,
+        .info		{
+			width: 30%;
+			margin: 1%;
+	    }
+		#services .service:last-child,
+		.plan:last-child {
+			display: inline-block;
+			margin: 1%;
+		}
+		.fact,
+        .member	{
+			width: 22.5%;
+			margin: 1%;
+		}
+		.member-img{
+			border-radius:  25px;
+			height:   300px;
+			margin-bottom: 0px;
+		 
+		} 
+		#contact form {
+			max-width: 800px;
+			margin: 20px auto;
+		}
+		#map {
+			 display: inline-block;
+			 margin: auto;
+		   position: relative;
+		   text-align:center;
+			 width: 100%;
+			max-width: 800px;
+		}
+		
+	
+}
